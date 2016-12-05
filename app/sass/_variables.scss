@@ -1,0 +1,105 @@
+// $normal: 14px;
+
+$thin: 'Conv_MuseoSansLight';
+$light: 'Conv_MuseoSansCyrl-300';
+$semi: 'Conv_MuseoSansCyrl-500';
+$bold: 'Conv_MuseoSansCyrl-700';
+$heavy: 'Conv_MuseoSansCyrl-900';
+
+
+
+
+
+$bp-xxx-large:   "only screen and (max-width : 1500px)";
+$bp-xx-large:   "only screen and (min-width : 1810px)";
+$bp-x-large:    "only screen and (min-width : 1310px)";
+$min-s:    "only screen and (min-width : 768px)";
+$min-m:    "only screen and (min-width : 992px)";
+
+$bp-blarge:      "only screen and (max-width : 1809px)";
+$bp-large:      "only screen and (max-width : 1309px)";
+$bp-medium:     "only screen and (max-width : 991px)";
+$bp-small:      "only screen and (max-width : 767px)";
+$bp-smm:      "only screen and (max-width : 550px)";
+$bp-xsmall:    "only screen and (max-width : 479px)";
+$bp-xxsmall:    "only screen and (max-width : 320px)";
+
+
+// ul {
+	// @media #{$bp-small} {
+	// 	width: 100%;
+	// }
+// }
+
+// ul {  
+//   @include respond-to(desktope) {
+//     width: 400%;
+//   }
+// }
+
+
+
+
+
+
+  // @include angle-edge(topleft, 7deg);
+  // &:before {
+  //   left: 0;
+  //   z-index: 1;
+  // }
+
+
+@mixin angle-edge($pos-top:null, $angle-top:null, $pos-btm:null, $angle-btm:null){
+  // width: 100%;
+  position: relative;
+  &::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+  }
+//     &::after
+// {
+//     content: '';
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     background: inherit;
+//     z-index: -1;
+//   }
+ 
+  @if $pos-top{
+    &::before{
+      @if $pos-top == 'topleft'{
+        top: 0;
+        transform-origin: right top;
+        transform: skewY($angle-top);
+      }
+      @if $pos-top == 'topright' {
+        top: 0;
+        transform-origin: left top;
+        transform: skewY(-$angle-top);
+      } 
+    }
+  }
+ 
+  @if $pos-btm{
+    &::after{
+      @if $pos-btm == 'bottomleft' {
+        bottom: 0;
+        transform-origin: right bottom;
+        transform: skewY(-$angle-btm);
+ 
+      } 
+ 
+      @if $pos-btm == 'bottomright' {
+        bottom: 0;
+        transform-origin: left bottom;
+        transform: skewY($angle-btm);
+      } 
+    }
+  }
+}
