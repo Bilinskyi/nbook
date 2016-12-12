@@ -405,13 +405,13 @@ myPlacemark;
 
 function init(){ 
 	myMap = new ymaps.Map ("map-canvas", {
-		center: [55.660049, 37.619585],
+		center: [64.544384, 40.516572],
 		zoom: 17
 	}); 
 	
 	
 
-	var myPlacemark = new ymaps.Placemark([55.660049, 37.619585], {
+	var myPlacemark = new ymaps.Placemark([64.544384, 40.516572], {
 		hintContent: ''
 	}, 
 	{

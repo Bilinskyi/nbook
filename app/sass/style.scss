@@ -1134,9 +1134,12 @@ p {
 	  		position: absolute;
 	  		left: 0;
 	  		right: 0;
-    top: 50%;
-    margin-top: 68px;	
-      	}
+	  		top: 50%;
+	  		margin-top: 68px;	
+	  		@media #{$bp-small} {
+	  			margin-top: 89px;
+	  		}
+	  	}
 	  	.bg-owl {
 	  		margin-top: 166px;
 	  		max-width: 580px;
@@ -1248,21 +1251,7 @@ p {
 	  			@media #{$bp-blarge} {
 	  				margin-top: 30px;
 	  			}
-	  			&:after {
-	  				content: '';
-	  				display: block;
-	  				position: absolute;
-	  				left: 30px;
-	  				right: 30px;
-	  				width: auto;
-	  				height: 1px;
-	  				background-color: whitesmoke;
-	  				top: -20px;
-	  				@media #{$bp-blarge} {
-	  					left: 15px;
-	  					right: 15px;
-	  				}
-	  			}
+	  			
 	  			.grey-block {
 	  				height: 108px;
 	  				background-color: whitesmoke;
@@ -1301,6 +1290,22 @@ p {
 	  			padding: 0 30px;
 	  			margin-top: 30px;
 	  			margin-bottom: 25px;
+	  			position: relative;
+	  			&:after {
+	  				content: '';
+	  				display: block;
+	  				position: absolute;
+	  				left: 30px;
+	  				right: 30px;
+	  				width: auto;
+	  				height: 1px;
+	  				background-color: whitesmoke;
+	  				top: -13px;
+	  				@media #{$bp-blarge} {
+	  					left: 15px;
+	  					right: 15px;
+	  				}
+	  			}
 	  			@media #{$bp-blarge} {
 	  				font-size: 14px;
 	  				line-height: 16px;
