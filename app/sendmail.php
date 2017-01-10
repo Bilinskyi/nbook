@@ -18,11 +18,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
   $phone = $_POST["phone"];
   $email = $_POST["email"];
 
-  // $utm_source = $_POST["utm_source"];
-  // $utm_medium = $_POST["utm_medium"];
-  // $utm_campaign = $_POST["utm_campaign"];
-  // $utm_term = $_POST["utm_term"];
-  // $utm_content = $_POST["utm_content"];
+  $utm_source = $_POST["utm_source"];
+  $utm_medium = $_POST["utm_medium"];
+  $utm_campaign = $_POST["utm_campaign"];
+  $utm_term = $_POST["utm_term"];
+  $utm_content = $_POST["utm_content"];
 
 
 
@@ -32,15 +32,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
   $to1  = "noutbook.otdelx@yandex.ru, gadgetstok29@gmail.com, pigas1987@gmail.com"; 
   
   if (isset($problem)) {
-    $message = "Выбор: $problem<br>Модель: $model<br>Марка: $mark<br>Год: $sel<br>Телефон: $phone";
+    $message = "Выбор: $problem<br>Модель: $model<br>Марка: $mark<br>Год: $sel<br>Телефон: $phone<br>$utm_source<br>$utm_medium<br>$utm_campaign<br>$utm_term<br>$utm_content";
   } else if (isset($popup)) {
-    $message = "Телефон: $phone";
+    $message = "Телефон: $phone<br>$utm_source<br>$utm_medium<br>$utm_campaign<br>$utm_term<br>$utm_content";
   } else if (isset($email)) {
-    $message = "Email: $email";
+    $message = "Email: $email<br>$utm_source<br>$utm_medium<br>$utm_campaign<br>$utm_term<br>$utm_content";
   } else if (isset($prod)) {
-    $message = "Телефон: $phone<br>$prod";
+    $message = "Телефон: $phone<br>$prod<br>$utm_source<br>$utm_medium<br>$utm_campaign<br>$utm_term<br>$utm_content";
   } else {
-    $message = "Телефон: $phone";
+    $message = "Телефон: $phone<br>$utm_source<br>$utm_medium<br>$utm_campaign<br>$utm_term<br>$utm_content";
   }
 
   $subject = "Заявка с сайта";
