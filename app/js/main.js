@@ -167,7 +167,8 @@ $(window).on('load resize', function() {
 		flag = true;	
 		fl = true;	
 
-		$('.wcm_chat').addClass('wcm_button_hidden');
+		
+      
 
 		$('.section-5 .item-notebook').removeAttr('style');
 		$('.section-2 .item-notebook').removeAttr('style');
