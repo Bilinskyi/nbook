@@ -1,0 +1,462 @@
+	.logo-text {
+		color: #9e8e84;
+		font-size: 12px;
+		line-height: 16px;
+		margin-top: 5px;
+		      	// br {
+		      	// 	display: none;
+		      	// 	@media #{$bp-xx-large} {
+		      	// 	      display: block;
+		      	// 	}
+		      	// }
+		      }
+		      .logo {
+		      	text-decoration: none;
+		      	color: #9e8e84;
+		      	font-family: 'Conv_Nexa Bold';
+		      	font-size: 36px;
+		      	line-height: 35px;
+
+		      	span {
+		      		font-family: 'Conv_Nexa Light';
+		      		display: block;
+		      		font-size: 22px;
+		      		line-height: 21px;
+		      		@media #{$bp-large} {
+		      			font-size: 17px;
+		      			line-height: 25px;
+		      		}
+		      		@media #{$bp-small} {
+		      		      font-size: 14px;
+		      		      line-height: 16px;
+		      		}
+		      	}
+		      	@media #{$bp-blarge} {
+		      		line-height: 25px;
+		      		@media #{$bp-large} {
+		      			font-size: 26px;
+		      			line-height: 25px;
+		      		}
+		      	}
+		      	@media #{$bp-small} {
+		      		font-size: 18px;
+		      		line-height: 25px;
+		      	}
+		      }
+
+		      .top-contact {
+		      	float: right;
+		      	text-align: left;
+		      	@media #{$bp-small} {
+		      		float: none;
+		      		text-align: center;
+		      		margin-top: 10px;
+		      	}
+		      	.phone {
+		      		color: #9e8e84;
+		      		font-size: 23px;
+		      		line-height: 34px;
+		      		font-family: $bold;
+		      		@media #{$bp-blarge} {
+		      			line-height: 30px;
+		      		}
+		      		@media #{$bp-large} {
+		      			font-size: 18px;
+		      			line-height: 24px;
+		      		}
+		      	}
+		      	.ico-phone {
+		      		vertical-align: middle;
+		      		width: 19px;
+		      		height: 19px;
+		      		background: url('../svg/icon-6-1.svg') center top no-repeat;
+		      		background-size: 19px 19px;
+		      		margin-right: 10px;
+		      		@media #{$bp-blarge} {
+		      			width: 15px;
+		      			height: 15px;
+		      			background-size: 15px 15px;
+		      		}
+		      	}
+		      	.link {
+		      		color: #9e8e84;
+		      		font-size: 12px;
+		      		line-height: 16px;
+		      		text-decoration: none;
+		      		text-transform: uppercase;
+		      		display: inline-block;
+		      		margin-top: 4px;
+		      		@media #{$bp-large} {
+		      			font-size: 11px;
+		      			line-height: 16px;
+		      			margin-top: 0;
+		      		}
+		      	}
+		      }
+
+
+
+
+		      .ico-place {
+		      	display: inline-block;
+		      	vertical-align: middle;
+		      	background: url('../svg/map-marker.svg') center top no-repeat;
+		      	width: 20px;
+		      	height: 20px;
+		      	background-size: 20px 20px;
+		      }
+		      .text-place {
+		      	display: inline-block;
+		      	vertical-align: middle;
+		      	color: #9e8e84;
+		      	font-size: 12px;
+		      }    
+
+
+
+		      header {
+		      	.button {
+		      		@media #{$bp-blarge} {
+		      		      width: 380px;
+		      		      @media #{$bp-large} {
+		      		            width: auto;
+		      		      }
+		      		}
+		      	}
+		      	@media #{$bp-small} {
+		      		text-align: center;
+		      	}
+		      	.logo {
+		      		display: inline-block;
+		      	}
+		      	.logo-text {
+		      		@media #{$bp-medium} {
+		      			display: inline-block;
+		      			margin-left: 10px;
+		      		}
+		      		@media #{$bp-small} {
+		      			display: block;
+		      		}
+		      	}
+		      	.col-sm-6 {
+		      		width: 33.33%;
+		      		@media #{$bp-medium} {
+		      			width: 50%;
+		      			&:nth-child(3) {
+		      				text-align: right;
+		      			}
+		      		}
+		      		@media #{$bp-small} {
+		      			width: 100%;
+		      		}
+		      	}
+		      	padding-top: 70px;
+		      	padding-bottom: 233px;
+		      	background-color: whitesmoke;
+		      	@media #{$bp-blarge} {
+		      		padding-bottom: 195px;
+		      		padding-top: 50px;
+		      	}
+		      	@media #{$bp-medium} {
+		      		padding-bottom: 160px;
+		      	}
+		      	.place-wrap {
+		      		padding-top: 8px;
+		      		@media #{$bp-small} {
+		      			text-align: center;
+		      		}
+		      	}
+		      	h3 {
+		      		@media #{$bp-blarge} {
+		      			margin: 0;
+		      		}
+		      	}
+		      	h1 {
+		      		text-align: center;
+		      		margin: 10px 0 0;
+		      		color: #aea49e;
+		      		font-size: 60px;
+		      		font-family: $thin;
+		      		text-transform: uppercase;
+		      		@media #{$bp-blarge} {
+		      			font-size: 40px;
+		      		}
+		      		@media #{$bp-medium} {
+		      			margin-top: 50px;
+		      		}
+		      		@media #{$bp-small} {
+		      		      font-size: 30px;
+		      		      line-height: 36px;
+		      		}
+		      	}
+		      	.list-header {
+		      		text-align: center;
+		      		padding-top: 10px;
+		      		@media #{$bp-blarge} {
+		      			padding-top: 5px;
+		      		}
+		      		@media #{$bp-small} {
+		      		      text-align: center;
+		      		      padding-top: 15px;
+		      		}
+		      		li {
+		      			display: inline-block;
+		      			margin: 0 10px;
+		      			color: #9e8e84;
+		      			font-size: 14px;
+		      			line-height: 17px;
+		      			font-family: $light;
+		      			text-transform: uppercase;
+		      			position: relative;
+		      			padding-left: 20px;
+		      			@media #{$bp-blarge} {
+		      				font-size: 12px;
+		      				line-height: 14px;
+		      			}
+		      			@media #{$bp-small} {
+		      				display: inline-block;
+		      			}
+		      			&:before {
+		      				content: '';
+		      				display: block;
+		      				position: absolute;
+		      				left: 0;
+		      				top: 50%;
+		      				transform: translateY(-50%);
+		      				width: 9px;
+		      				height: 9px;
+		      				background-color: #ffd285;
+		      				border-radius: 50%;
+		      				@media #{$bp-blarge} {
+		      					width: 7px;
+		      					height: 7px;
+		      				}
+		      			}
+		      		}
+		      	}
+		      	.sm-photo {
+		      		margin-top: 88px;
+		      		position: relative;
+		      		z-index: 2;
+		      		text-align: center;
+		      		@media #{$bp-blarge} {
+		      			margin-top: 60px;
+		      		}
+		      		&>div {
+		      			vertical-align: middle;
+		      		}
+		      		.b1 {
+		      			background: url('../svg/b1.svg') center top no-repeat;
+		      			width: 86px;
+		      			height: 14px;
+		      			background-size: 86px 14px;
+		      			@media #{$bp-blarge} {
+		      				width: 64px;
+		      				height: 10px;
+		      				background-size: 64px 10px;
+		      			}
+		      		}
+		      		.b2 {
+		      			background: url('../svg/b2.svg') center top no-repeat;
+		      			width: 94px;
+		      			height: 14px;
+		      			background-size: 94px 14px;
+		      			@media #{$bp-blarge} {
+		      				width: 71px;
+		      				height: 10px;
+		      				background-size: 71px 10px;
+		      			}
+		      		}
+		      		.b3 {
+		      			background: url('../img/b3.png') center top no-repeat;
+		      			width: 17px;
+		      			height: 17px;
+		      			@media #{$bp-blarge} {
+		      				width: 13px;
+		      				height: 13px;
+		      				background-size: 13px 13px;
+		      			}
+		      		}
+		      		.b4 {
+		      			background: url('../img/b4.png') center top no-repeat;
+		      			width: 49px;
+		      			height: 15px;
+		      			@media #{$bp-blarge} {
+		      				width: 36px;
+		      				height: 12px;
+		      				background-size: 36px 12px;
+		      			}
+		      		} 
+		      		.b5 {
+		      			background: url('../img/b5.png') center top no-repeat;
+		      			width: 72px;
+		      			height: 18px;
+		      			@media #{$bp-blarge} {
+		      				width: 54px;
+		      				height: 14px;
+		      				background-size: 54px 14px;
+		      			}
+		      		}
+		      		.b6 {
+		      			background: url('../img/b6.png') center top no-repeat;
+		      			width: 21px;
+		      			height: 21px;
+		      			@media #{$bp-blarge} {
+		      				width: 16px;
+		      				height: 16px;
+		      				background-size: 16px 16px; 
+		      			}
+		      		}
+		      		.b7 {
+		      			background: url('../img/b7.png') center top no-repeat;
+		      			width: 56px;
+		      			height: 20px;
+		      			@media #{$bp-blarge} {
+		      				width: 41px;
+		      				height: 15px;
+		      				background-size: 41px 15px;
+		      			}
+		      		}
+		      		.b8 {
+		      			background: url('../img/b8.png') center top no-repeat;
+		      			width: 62px;
+		      			height: 14px;
+		      			@media #{$bp-blarge} {
+		      				width: 46px;
+		      				height: 11px;
+		      				background-size: 46px 11px;
+		      			}
+		      		}
+		      		.b9 {
+		      			background: url('../img/b9.png') center top no-repeat;
+		      			width: 33px;
+		      			height: 13px;
+		      			@media #{$bp-blarge} {
+		      				width: 25px;
+		      				height: 10px;
+		      				background-size: 25px 10px;
+		      			}
+		      		}
+		      		.b10 {
+		      			background: url('../img/b10.png') center top no-repeat;
+		      			width: 56px;
+		      			height: 14px;
+		      			@media #{$bp-blarge} {
+		      				width: 41px;
+		      				height: 11px;
+		      				background-size: 41px 11px;
+		      			}
+		      		}
+		      		.b11 {
+		      			background: url('../img/b11.png') center top no-repeat;
+		      			width: 90px;
+		      			height: 17px;
+		      			@media #{$bp-blarge} {
+		      				width: 68px;
+		      				height: 13px;
+		      				background-size: 68px 13px;
+		      			}
+		      		}
+		      		.b12 {
+		      			background: url('../img/b12.png') center top no-repeat;
+		      			width: 70px;
+		      			height: 14px;
+		      			@media #{$bp-blarge} {
+		      				width: 52px;
+		      				height: 11px;
+		      				background-size: 52px 11px;
+		      			}
+		      		}
+		      	}
+		      	.main-img {
+		      		margin-top: -25px;
+		      		margin-bottom: 60px;
+		      		@media #{$bp-blarge} {
+		      			width: 842px;
+		      			margin-top: -15px;
+		      			height: auto;
+		      			margin-bottom: 35px;
+		      		}
+		      		@media #{$bp-medium} {
+		      			max-width: 100%;
+		      			height: auto;
+		      		}
+		      		@media #{$bp-small} {
+		      		      margin-top: 0;
+		      		}
+
+		      	} 
+		      	.about-company {
+		      		text-align: center;
+		      		margin-bottom: 70px;
+		      		@media #{$bp-blarge} {
+		      			margin-bottom: 30px;
+		      		}
+		      		.item {
+		      			display: inline-block;
+		      			vertical-align: top;
+		      			min-width: 285px;
+		      			position: relative;
+		      			@media #{$bp-blarge} {
+		      				min-width: 240px;
+		      			}
+		      			@media #{$bp-medium} {
+		      				width: auto;
+		      				min-width: 10px;
+		      				margin: 0 10px;
+		      			}
+		      			.img-h1 {
+		      				position: relative;
+		      				height: 30px;
+		      			}
+		      			.ico {
+		      				display: block;
+		      				position: absolute;
+		      				left: 0;
+		      				right: 0;
+		      				top: 50%;
+		      				transform: translateY(-50%);
+		      				margin-left: auto;
+		      				margin-right: auto;
+		      				&.icon-1-1 {
+		      					background: url('../svg/heart.svg') center top no-repeat;
+		      					width: 27px;
+		      					height: 24px;
+		      					background-size: 27px 24px; 
+		      					@media #{$bp-blarge} {
+		      						width: 23px;
+		      						height: 20px;
+		      						background-size: 23px 20px;
+		      					}
+		      				}
+		      				&.icon-1-2 {
+		      					background: url('../svg/icon-1-2.svg') center top no-repeat;
+		      					width: 36px;
+		      					height: 27px;
+		      					background-size: 36px 27px; 
+		      					@media #{$bp-blarge} {
+		      						width: 26px;
+		      						height: 21px;
+		      						background-size: 26px 21px;
+		      					}
+		      				}
+		      				&.icon-1-3 {
+		      					background: url('../svg/icon-1-3.svg') center top no-repeat;
+		      					width: 28px;
+		      					height: 28px;
+		      					background-size: 28px 28px; 
+		      					@media #{$bp-blarge} {
+		      						width: 22px;
+		      						height: 22px;
+		      						background-size: 22px 22px;
+		      					}
+		      				}
+		      			}
+		      			p {
+		      				font-size: 14px;
+		      				line-height: 18px;
+		      				font-family: $thin;
+		      			}
+		      		}
+		      	}
+		      }

@@ -166,6 +166,9 @@ $(window).on('load resize', function() {
 	} else {
 		flag = true;	
 		fl = true;	
+
+		$('.wcm_chat').addClass('wcm_button_hidden');
+
 		$('.section-5 .item-notebook').removeAttr('style');
 		$('.section-2 .item-notebook').removeAttr('style');
 	};
@@ -405,13 +408,13 @@ myPlacemark;
 
 function init(){ 
 	myMap = new ymaps.Map ("map-canvas", {
-		center: [64.544384, 40.516572],
+		center: [64.545337, 40.515646],
 		zoom: 17
 	}); 
 	
 	
 
-	var myPlacemark = new ymaps.Placemark([64.544384, 40.516572], {
+	var myPlacemark = new ymaps.Placemark([64.545011, 40.515440], {
 		hintContent: ''
 	}, 
 	{

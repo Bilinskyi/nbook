@@ -1,0 +1,364 @@
+input:not([type=submit]) {
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	border: 1px solid #e2e2e2;
+	border-radius: 100px;
+	text-align: center;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+	outline: none;
+
+	font-family: $thin;
+	color: #4d4d4d;
+	font-size: 24px;
+
+	@media #{$bp-blarge} {
+		height: 52px;
+	}
+	@media #{$bp-large} {
+		font-size: 23px;
+	}
+}
+
+[type=submit] {
+	display: inline-block;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+input.error {
+	border: 2px solid red !important;
+}
+
+.button {
+	height: 70px;
+	line-height: 66px;
+	text-align: center;
+	padding: 0 75px;
+	border: 2px solid #e9e9e9;
+	border-radius: 60px;
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	background: none;
+	transition: background-color .35s;
+	overflow: hidden;
+	@media #{$bp-blarge} {
+		height: 54px;
+		line-height: 50px;
+		padding: 0 60px;
+	}
+
+	.pr {
+		font-family: $bold;
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 16px;
+		line-height: 16px;
+
+		color: #53c1ed;
+		@media #{$bp-blarge} {
+			font-size: 12px;
+			line-height: 12px;
+		}
+		@media #{$bp-small} {
+			font-size: 9px;
+		}
+	}
+	
+	.circle2 {
+		// transition: .35s;
+		width: 60px;
+		height: 60px;
+		border: 1px dashed rgba(77,77,77, .34);
+		border-width: 2px;
+		border-radius: 50%;
+		display: block;
+		position: absolute;
+		right: 5px;
+		top: 50%;
+		transform: translateY(-50%);
+		@media #{$bp-blarge} {
+			width: 44px;
+			height: 44px;
+		}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background-color: #f0ebe7;
+			border-radius: 50%;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			@media #{$bp-blarge} {
+				width: 22px;
+				height: 22px;
+			}
+		}
+		&:before {
+			content: '';
+			display: block;
+			background: url(../svg/arrow-left.svg) center top no-repeat;
+			width: 8px;
+			height: 15px;
+			background-size: 8px 15px;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			z-index: 2;
+			opacity: 0;
+			position: absolute;
+			// transition-duration: .35s;
+			// transition-delay: 0s;
+			transition: 0;
+			@media #{$bp-blarge} {
+				width: 5px;
+				height: 10px;
+				background-size: 5px 10px;
+			}
+		}
+	}
+	.circle {
+		border-radius: 60px;
+		
+		animation-name: buy-btn-bg;
+		animation-duration: .35s;
+		animation-timing-function: linear;
+		display: block;
+		position: absolute;
+		left: 3px;
+		top: 3px; 
+		width: 60px;
+		height: 60px;
+		border: 14px solid #f0ebe7;
+		@media #{$bp-blarge} {
+			width: 44px;
+			height: 44px;
+			border-width: 10px;
+		}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			background: url('../svg/arrow-right.svg') center top no-repeat;
+			width: 8px;
+			height: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			background-size: 8px 15px;
+			@media #{$bp-blarge} {
+				width: 5px;
+				height: 10px;
+				background-size: 5px 10px;
+			}
+		}
+
+	}
+	&:hover {
+		border: 2px solid #e5d7cc;
+		span.circle {
+			border-radius: 0px;
+			background-color: #e5d7cc;
+			animation-name: buy-btn-bg_hover;
+			// animation-duration: .35s;
+			animation-fill-mode: forwards;
+			border-color: #e5d7cc;
+
+			transition: border-radius .45s 0s;
+			@media #{$bp-blarge} {
+				border-radius: 0px;
+			}
+			&:after {
+				opacity: 0;
+			}
+		}
+		span.circle2 {
+			border-color: #f0ebe7;
+			border: 14px solid white;
+			@media #{$bp-blarge} {
+			      border-width: 10px;
+			}
+			&:after {
+				background-color: #f5f5f5;
+			}
+			&:before {
+				opacity: 1;
+				// transition-delay: .35s;
+			}
+		}
+		.pr {
+			color: #9e8e84;
+		}
+	}
+	&:active {
+		border-color: #d0bcab;
+		span.circle {
+			background-color: #d0bcab;
+			border-color: #d0bcab
+		}
+		.pr {
+			color: #83756c;
+		}
+		span.circle2 {
+			&:before {
+				background: url('../svg/arrow-down.svg') center top no-repeat;
+				width: 15px;
+				height: 8px;
+				background-size: 15px 8px;
+				@media #{$bp-blarge} {
+									background: url('../svg/arrow-down.svg') center top no-repeat;
+				      width: 10px;
+				      height: 5px;
+				      background-size: 10px 5px;
+				}
+			}
+		}
+		
+	}
+}
+
+
+
+.form-all {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	@media #{$bp-blarge} {
+		width: 380px;
+		padding-top: 30px;
+	}
+	@media #{$bp-small} {
+		width: 100%;
+		max-width: 400px;
+	}
+	&.f-pop {
+		padding: 85px 100px;
+		width: 805px;
+		background-color: #fff;
+		@media #{$bp-large} {
+			padding: 40px 30px;
+			width: 600px;
+		}
+		@media #{$bp-medium} {
+			width: 500px;
+		}
+		@media #{$bp-small} {
+			width: 100%;
+			padding: 20px 10px;
+		}
+		h3 {
+			margin-bottom: 30px;
+		}
+		.note {
+			margin-bottom: 19px;
+		}
+		input {
+			margin-bottom: 20px;
+			max-width: 500px;
+			
+		}
+	}
+	&.form-thx {
+		text-align: center;
+		.button {
+			width: auto;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0 110px;
+			@media #{$bp-small} {
+				padding: 0 60px;
+			}
+		}
+	}
+	&.form-line {
+		width: 680px;
+		padding: 50px 90px 80px;
+		border-bottom: 1px solid #f0ebe7;
+		@media #{$bp-blarge} {
+			width: 560px;
+			padding-top: 30px;
+			padding-bottom: 50px;
+		}
+		@media #{$bp-small} {
+			width: 100%;
+			max-width: 500px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	&.form-all-price {
+		.button {
+			width: 100% !important;
+		}
+	}
+	&.last-step {
+		padding-top: 22px;
+		select {
+			margin-bottom: 45px;
+		}
+		option {
+			font-size: 15px;
+		}
+	}
+	select {
+		color: #b0aaa6;
+		font-size: 24px;
+		font-family: $light;
+		appearance: none;
+		-webkit-appearance: none;
+		text-align-last:center;
+		display: inline-block;
+		width: 100%;
+		height: 68px;
+		background-image: linear-gradient(180deg, #fefefe 0%, #f4f4f4 100%);
+		border: 1px solid #f3f3f3;
+		border-radius: 100px;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 white;
+		outline: none;
+		text-align: center;
+		@media #{$bp-large} {
+			font-size: 23px;
+		}
+	}
+	input {
+		margin-bottom: 34px;      
+		@media #{$bp-blarge} {
+			margin-bottom: 25px;
+		}
+		@media #{$bp-small} {
+			margin-bottom: 20px;
+		}
+	}
+	[type=submit] {
+		width: 100%;
+	}
+	.note {
+		margin-top: 19px;
+		@media #{$bp-blarge} {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+select {
+	padding-left: 30px;
+}
+select,
+option {
+	 text-align:center;   
+}
