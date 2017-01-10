@@ -45,7 +45,7 @@
 			<div class="row">
 
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<a href="index.php" class="logo">Gadget<span>Stock</span></a>
+					<a href="index.html" class="logo">Gadget<span>Stock</span></a>
 					<div class="logo-text">Выкуп ноутбуков в любом <br>состоянии от 2007 года <br>выпуска</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-right">
@@ -170,13 +170,12 @@
 
 	<section class="section-3 sec line-white" id="s-3">
 		<form class="" method="post" id="feedback-valid-3" action="sendmail.php">
-			
-			<div class="container active">
-              <input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+			<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
 			<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
 			<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
 			<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
 			<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+			<div class="container active">
 				<h2>Рассчитайте</h2>
 				<h3>предварительную <br>стоимость</h3>
 				<div class="info">

@@ -30,17 +30,93 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
   
   
   $to1  = "noutbook.otdelx@yandex.ru, gadgetstok29@gmail.com, pigas1987@gmail.com"; 
+    
   
   if (isset($problem)) {
-    $message = "Выбор: $problem<br>Модель: $model<br>Марка: $mark<br>Год: $sel<br>Телефон: $phone<br>$utm_source<br>$utm_medium<br>$utm_campaign<br>$utm_term<br>$utm_content";
+    $message = "Выбор: $problem<br>Модель: $model<br>Марка: $mark<br>Год: $sel<br>Телефон: $phone";
+    if (!empty($utm_source)) {
+      $message .= "<br>utm_source: $utm_source";
+    }
+    if (!empty($utm_medium)) {
+      $message .= "<br>utm_medium: $utm_medium";
+    }
+    if (!empty($utm_campaign)) {
+      $message .= "<br>utm_campaign: $utm_campaign";
+    }
+    if (!empty($utm_term)) {
+      $message .= "<br>utm_term: $utm_term";
+    }
+    if (!empty($utm_content)) {
+      $message .= "<br>utm_content: $utm_content";
+    }
   } else if (isset($popup)) {
-    $message = "Телефон: $phone<br>$utm_source<br>$utm_medium<br>$utm_campaign<br>$utm_term<br>$utm_content";
+    $message = "Телефон: $phone";
+    if (!empty($utm_source)) {
+      $message .= "<br>utm_source: $utm_source";
+    }
+    if (!empty($utm_medium)) {
+      $message .= "<br>utm_medium: $utm_medium";
+    }
+    if (!empty($utm_campaign)) {
+      $message .= "<br>utm_campaign: $utm_campaign";
+    }
+    if (!empty($utm_term)) {
+      $message .= "<br>utm_term: $utm_term";
+    }
+    if (!empty($utm_content)) {
+      $message .= "<br>utm_content: $utm_content";
+    }
   } else if (isset($email)) {
-    $message = "Email: $email<br>$utm_source<br>$utm_medium<br>$utm_campaign<br>$utm_term<br>$utm_content";
+    $message = "Email: $email";
+    if (!empty($utm_source)) {
+      $message .= "<br>utm_source: $utm_source";
+    }
+    if (!empty($utm_medium)) {
+      $message .= "<br>utm_medium: $utm_medium";
+    }
+    if (!empty($utm_campaign)) {
+      $message .= "<br>utm_campaign: $utm_campaign";
+    }
+    if (!empty($utm_term)) {
+      $message .= "<br>utm_term: $utm_term";
+    }
+    if (!empty($utm_content)) {
+      $message .= "<br>utm_content: $utm_content";
+    }
   } else if (isset($prod)) {
-    $message = "Телефон: $phone<br>$prod<br>$utm_source<br>$utm_medium<br>$utm_campaign<br>$utm_term<br>$utm_content";
+    $message = "Телефон: $phone<br>$prod";
+    if (!empty($utm_source)) {
+      $message .= "<br>utm_source: $utm_source";
+    }
+    if (!empty($utm_medium)) {
+      $message .= "<br>utm_medium: $utm_medium";
+    }
+    if (!empty($utm_campaign)) {
+      $message .= "<br>utm_campaign: $utm_campaign";
+    }
+    if (!empty($utm_term)) {
+      $message .= "<br>utm_term: $utm_term";
+    }
+    if (!empty($utm_content)) {
+      $message .= "<br>utm_content: $utm_content";
+    }
   } else {
-    $message = "Телефон: $phone<br>$utm_source<br>$utm_medium<br>$utm_campaign<br>$utm_term<br>$utm_content";
+    $message = "Телефон: $phone";
+    if (!empty($utm_source)) {
+      $message .= "<br>utm_source: $utm_source";
+    }
+    if (!empty($utm_medium)) {
+      $message .= "<br>utm_medium: $utm_medium";
+    }
+    if (!empty($utm_campaign)) {
+      $message .= "<br>utm_campaign: $utm_campaign";
+    }
+    if (!empty($utm_term)) {
+      $message .= "<br>utm_term: $utm_term";
+    }
+    if (!empty($utm_content)) {
+      $message .= "<br>utm_content: $utm_content";
+    }
   }
 
   $subject = "Заявка с сайта";
@@ -51,7 +127,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
   $headers .= "From: $from\r\n";
   $headers .= "Reply-To: $email\r\n";
 
-  if (isset($phone)) {
+   if (isset($phone)) {
     $body = file_get_contents("http://sms.ru/sms/send?api_id=4F5C3A0E-056A-24F5-60AC-53BF91060D00&to=79632004402&text=".urlencode("Заявка с сайта «Gadget Stock». Телефон: $phone"));
   }
 

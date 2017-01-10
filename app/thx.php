@@ -42,7 +42,25 @@
 				</div>  
 				<h1>Спасибо</h1>
 				<h3>Ваша заявка отправлена</h3>
-				<div class="note">В ближайшее время наш менеджер свяжется с вами</div>
+				<div class="note">
+					В ближайшее время наш менеджер свяжется с вами, укажите ваш email, как альтернативный способ <br>связи, на него мы продублируем информацию о вашей заявке
+				</div>
+				<form class="form-all form-thx" method="post" id="feedback-valid-email" action="sendmail.php">
+                  <input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+			<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+			<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+			<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+			<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+					<input type="email" name="email" placeholder="Email"> 
+					<button type="submit" class="button">
+						<span class="circle"></span>
+						<span class="circle2"></span>
+						<span class="pr">ОТПРАВИТЬ</span>
+					</button>
+					<div class="note">
+						В ближайшее время наш менеджер свяжется с вами
+					</div>
+				</form>
 			</div>
 		</div>
 	</header>
