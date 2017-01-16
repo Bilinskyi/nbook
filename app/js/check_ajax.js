@@ -2,10 +2,10 @@ $(document).ready(function() {
 
 	$('#feedback-valid-1').validate({
 		rules:{
-			"phone":{required:true}
+			"phone-none":{required:true}
 		},
 		messages:{
-			"phone":{required:""}
+			"phone-none":{required:""}
 		},
 		submitHandler: function(form){
 			$(form).ajaxSubmit({
@@ -31,10 +31,10 @@ $(document).ready(function() {
 
 	$('#feedback-diagn').validate({
 		rules:{
-			"phone":{required:true}
+			"phone-none":{required:true}
 		},
 		messages:{
-			"phone":{required:""}
+			"phone-none":{required:""}
 		},
 		submitHandler: function(form){
 			$(form).ajaxSubmit({
@@ -87,10 +87,10 @@ $(document).ready(function() {
 
 	$('#feedback-valid-2').validate({
 		rules:{
-			"phone":{required:true}
+			"phone-none":{required:true}
 		},
 		messages:{
-			"phone":{required:""}
+			"phone-none":{required:""}
 		},
 		submitHandler: function(form){
 			$(form).ajaxSubmit({
@@ -115,10 +115,10 @@ $(document).ready(function() {
 
 	$('#feedback-valid-3').validate({
 		rules:{
-			"phone":{required:true}
+			"phone-none":{required:true}
 		},
 		messages:{
-			"phone":{required:""}
+			"phone-none":{required:""}
 		},
 		submitHandler: function(form){
 			$(form).ajaxSubmit({
@@ -142,19 +142,19 @@ $(document).ready(function() {
 	});
 
 
-	$('#feedback-phone').validate({
+	$('#feedback-phone-none').validate({
 		rules:{
-			"phone":{required:true}
+			"phone-none":{required:true}
 		},
 		messages:{
-			"phone":{required:""}
+			"phone-none":{required:""}
 		},
 		submitHandler: function(form){
 			$(form).ajaxSubmit({
 				success: function(data) {
 					if (data == "true")
 					{
-						$(':input','#feedback-phone')
+						$(':input','#feedback-phone-none')
 						.not(':button, :submit, :reset, :hidden')
 						.val('')
 						.removeAttr('checked')
@@ -170,10 +170,10 @@ $(document).ready(function() {
 
 	$('#feedback-ord-1').validate({
 		rules:{
-			"phone":{required:true}
+			"phone-none":{required:true}
 		},
 		messages:{
-			"phone":{required:""}
+			"phone-none":{required:""}
 		},
 		submitHandler: function(form){
 			$(form).ajaxSubmit({
@@ -195,10 +195,10 @@ $(document).ready(function() {
 
 	$('#feedback-ord-2').validate({
 		rules:{
-			"phone":{required:true}
+			"phone-none":{required:true}
 		},
 		messages:{
-			"phone":{required:""}
+			"phone-none":{required:""}
 		},
 		submitHandler: function(form){
 			$(form).ajaxSubmit({
@@ -220,10 +220,10 @@ $(document).ready(function() {
 
 	$('#feedback-ord-3').validate({
 		rules:{
-			"phone":{required:true}
+			"phone-none":{required:true}
 		},
 		messages:{
-			"phone":{required:""}
+			"phone-none":{required:""}
 		},
 		submitHandler: function(form){
 			$(form).ajaxSubmit({
@@ -245,10 +245,10 @@ $(document).ready(function() {
 
 	$('#feedback-ord-4').validate({
 		rules:{
-			"phone":{required:true}
+			"phone-none":{required:true}
 		},
 		messages:{
-			"phone":{required:""}
+			"phone-none":{required:""}
 		},
 		submitHandler: function(form){
 			$(form).ajaxSubmit({

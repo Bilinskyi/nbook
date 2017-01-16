@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
   
   
   
-  $to1  = "noutbook.otdelx@yandex.ru, gadgetstok29@gmail.com, pigas1987@gmail.com"; 
+  $to1  = "1unitedcrew@gmail.com"; 
     
   
   if (isset($problem)) {
@@ -123,13 +123,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
   
   $headers  = "Content-type: text/html; charset=utf-8 \r\n";
-  $from = "=?UTF-8?B?".base64_encode("gadgetstok-skupka.ru")."?= <http://gadgetstok-skupka.ru/";
+  $from = "=?UTF-8?B?".base64_encode("GS-Skupka")."?= <main@gadgetstok-skupka.ru";
   $headers .= "From: $from\r\n";
   $headers .= "Reply-To: $email\r\n";
 
-   if (isset($phone)) {
-    $body = file_get_contents("http://sms.ru/sms/send?api_id=4F5C3A0E-056A-24F5-60AC-53BF91060D00&to=79632004402&text=".urlencode("Заявка с сайта «Gadget Stock». Телефон: $phone"));
-  }
+  //  if (isset($phone)) {
+  //   $body = file_get_contents("http://sms.ru/sms/send?api_id=4F5C3A0E-056A-24F5-60AC-53BF91060D00&to=79632004402&text=".urlencode("Заявка: $phone"));
+  // }
 
   $result = mail($to1, $subject, $message, $headers);
 } 

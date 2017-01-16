@@ -29,7 +29,7 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-right">
 						<div class="top-contact">
-							<div class="phone">8 800 555 11 11</div>
+							<div class="phone">8 (818) 242-44-02</div>
 							<a href="#call" class="link modal-form"><i class="ico ico-phone"></i>Перезвонить вам?</a>
 						</div>
 					</div>

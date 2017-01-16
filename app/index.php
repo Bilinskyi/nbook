@@ -118,7 +118,7 @@
 				<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
 				<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
 				<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
-				<input type="tel" name="phone" class="mask" placeholder="+7(___) ___-__-__"> 
+				<input type="tel" name="phone" required class="mask" placeholder="+7(___) ___-__-__"> 
 				<button type="submit" class="button">
 					<span class="circle"></span>
 					<span class="circle2"></span>
@@ -278,8 +278,8 @@
 				<div class="row">
 					<div class="col-lg-10 col-md-8 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-2">
 						<h2>Информация о вашем ноутбуке</h2>
-						<h3>уже отправлена</h3>
-						<div class="note-0">Ваш менеджер</div>
+						<h3>будет отправлена</h3>
+						<div class="note-0">Вашим менеджером будет</div>
 						<div class="name">Любовь</div>
 						<img src="img/person.png" alt="" class="person" width="211" height="211">
 						<div class="next-wrapp">
@@ -306,7 +306,7 @@
 							</div>
 						</div>
 						<div class="form-all form-all-price">
-							<input type="tel" class="mask" name="phone" placeholder="+7(___) ___-__-__"> 
+							<input type="tel" class="mask" name="phone" required placeholder="+7(___) ___-__-__"> 
 							<button type="submit" class="button">
 								<span class="circle"></span>
 								<span class="circle2"></span>
@@ -740,7 +740,7 @@
 					<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
 					<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
 					<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
-					<input type="tel" class="mask" name="phone" placeholder="+7(___) ___-__-__"> 
+					<input type="tel" class="mask" name="phone" required placeholder="+7(___) ___-__-__"> 
 					<button type="submit" class="button">
 						<span class="circle"></span>
 						<span class="circle2"></span>
@@ -906,7 +906,7 @@
 		<h2>Оставьте свой номер,</h2>
 		<h3>И мы перезвоним</h3>
 		<div class="note">В ближайшее время наш менеджер свяжется с вами</div>
-		<input type="tel" class="mask" name="phone" placeholder="+7(___) ___-__-__"> 
+		<input type="tel" class="mask" name="phone" required placeholder="+7(___) ___-__-__"> 
 		<input type="hidden" name="popup">
 		<button type="submit" class="button">
 			<span class="circle"></span>
@@ -926,7 +926,7 @@
 		<h2>Оставьте свой номер,</h2>
 		<h3>для записи на диагностику</h3>
 		<div class="note">В ближайшее время наш менеджер свяжется с вами</div>
-		<input type="tel" class="mask" name="phone" placeholder="+7(___) ___-__-__"> 
+		<input type="tel" class="mask" name="phone" required placeholder="+7(___) ___-__-__"> 
 		<input type="hidden" name="diagn">
 		<button type="submit" class="button">
 			<span class="circle"></span>
@@ -948,7 +948,7 @@
 		<h2>Получите консультацию</h2>
 		<h3>по выкупу смартфонов</h3>
 		<div class="note">В ближайшее время наш менеджер свяжется с вами</div>
-		<input type="tel" class="mask" name="phone" placeholder="+7(___) ___-__-__"> 
+		<input type="tel" class="mask" name="phone" required placeholder="+7(___) ___-__-__"> 
 		<button type="submit" class="button">
 			<span class="circle"></span>
 			<span class="circle2"></span>
@@ -967,7 +967,7 @@
 		<h2>Получите консультацию</h2>
 		<h3>по выкупу системных блоков</h3>
 		<div class="note">В ближайшее время наш менеджер свяжется с вами</div>
-		<input type="tel" class="mask" name="phone" placeholder="+7(___) ___-__-__"> 
+		<input type="tel" class="mask" name="phone" required placeholder="+7(___) ___-__-__"> 
 		<button type="submit" class="button">
 			<span class="circle"></span>
 			<span class="circle2"></span>
@@ -986,7 +986,7 @@
 		<h2>Получите консультацию</h2>
 		<h3>по выкупу техники apple</h3>
 		<div class="note">В ближайшее время наш менеджер свяжется с вами</div>
-		<input type="tel" class="mask" name="phone" placeholder="+7(___) ___-__-__"> 
+		<input type="tel" class="mask" name="phone" required placeholder="+7(___) ___-__-__"> 
 		<button type="submit" class="button">
 			<span class="circle"></span>
 			<span class="circle2"></span>
@@ -1005,7 +1005,7 @@
 		<h2>Получите консультацию</h2>
 		<h3>по выкупу техники</h3>
 		<div class="note">В ближайшее время наш менеджер свяжется с вами</div>
-		<input type="tel" class="mask" name="phone" placeholder="+7(___) ___-__-__"> 
+		<input type="tel" class="mask" name="phone" required placeholder="+7(___) ___-__-__"> 
 		<button type="submit" class="button">
 			<span class="circle"></span>
 			<span class="circle2"></span>
